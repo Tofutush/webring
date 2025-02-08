@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+    <title>webring index page example</title>
+</head>
+
+<body>
+    <script src="sites.js"></script>
+    <script>
+        let ul = document.createElement('ul');
+        for (let z = 0; z < siteList.length; z++) {
+            let li = document.createElement('li');
+            let a = document.createElement('a');
+            a.innerHTML = siteList[z].name;
+            a.href = siteList[z].url;
+            li.appendChild(a);
+            ul.appendChild(li);
+        }
+        document.body.appendChild(ul);
+    </script>
+</body>

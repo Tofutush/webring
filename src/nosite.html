@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<head>
+    <title>no such site</title>
+</head>
+
+<body>
+    <script>
+        let site = new URLSearchParams(window.location.search).get('site');
+        let p = document.createElement('p');
+        p.innerHTML = `site with name "${site}" not found`;
+        document.body.appendChild(p);
+    </script>
+</body>
